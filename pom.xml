@@ -12,6 +12,9 @@
     <inceptionYear>2023</inceptionYear>
     <modules>
         <module>registry-center</module>
+        <module>rpc-core</module>
+        <module>demo-server</module>
+        <module>demo-client</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

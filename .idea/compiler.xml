@@ -7,16 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="registry-center" />
+        <module name="demo-server" />
+        <module name="rpc-core" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="forward-rpc-framework" target="1.8" />
-      <module name="registry-center" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo-server" options="-XDignore.symbol.file" />
       <module name="registry-center" options="-XDignore.symbol.file" />
+      <module name="rpc-core" options="-XDignore.symbol.file" />
     </option>
   </component>
 </project>
